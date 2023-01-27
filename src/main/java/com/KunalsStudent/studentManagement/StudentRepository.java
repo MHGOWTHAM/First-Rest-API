@@ -11,7 +11,8 @@ public class StudentRepository {
     Map<Integer,Student> db=new HashMap<>();
 
     public Student getStudent(int id){
-         return db.get(id);
+
+        return db.get(id);
     }
 
     public String addStudent(Student student){
@@ -34,6 +35,6 @@ public class StudentRepository {
             return "Invalid id";
         }
         db.get(id).setAge(age);
-        return "Student is Updated";
+        return "Student Age is Updated";
     }
 }
